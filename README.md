@@ -1,10 +1,10 @@
-# Erebus LS
+# Monolith LS
 
 A [LiteStep][1] theme inspired by futuristic, sci-fi interfaces.
 
 I want to say that the animations are really what pulled this whole theme together for me.
 
-The start menu and weather widget both slide on and off the screen, section by section, when showing or hiding. The sys tray slides down and up from the top of the screen when showing and hiding. The taskbar grows and shrinks to accomidate the number of active tasks. It can grow all the way out to the clock and will slide up and back down at the proper size to make room for the sys tray if needed when it's shown. It also does the same when the sys tray is then hidden if needed to expanded the taskbar back out to the clock.
+The start menu and weather widget both slide on and off the screen, section by section, when showing or hiding. The sys tray slides down and up from the top of the screen when showing and hiding. The taskbar grows and shrinks to accommodate the number of active tasks. It can grow all the way out to the clock and will slide up and back down at the proper size to make room for the sys tray if needed when it's shown. It also does the same when the sys tray is then hidden if needed to expanded the taskbar back out to the clock.
 
 They all give the theme a great feel when using it. Sometimes I find myself just playing with the start menu :s
 
