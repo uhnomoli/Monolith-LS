@@ -1,0 +1,541 @@
+; ------------------------------------------------------
+;
+;  [ Theme   ] : Monolith
+;  [ Author  ] : Andrew Fricke (Anomareh)
+;  [ Website ] : http://www.mirroredwhite.com/
+;  [ Source  ] : http://github.com/Anomareh/Monolith-LS
+;
+; ------------------------------------------------------
+
+
+; -----------------------
+;  [ Monolith LiteStep ]
+; -----------------------
+
+ThemeName		"Monolith"
+ThemeAuthor		"Andrew Fricke (Anomareh)"
+
+OTSMajorVersion	2
+OTSMinorVersion 0
+
+ConfigDir		"$ThemeDir$config\"
+CacheDir		"$ThemeDir$cache\"
+LSImageFolder	"$ThemeDir$images\"
+
+Include			"$ConfigDir$themeVars.rc"
+
+
+; -------------
+;  [ Modules ]
+; -------------
+
+*NetLoadModuleSite	"http://www.ls-themes.org/modules/download/"
+*NetLoadModuleSite	"http://www.ls-universe.ls-themes.org/modules/"
+*NetLoadModuleSite	"http://www.modules.shellfront.org/"
+
+
+*NetLoadModule		xpaintclass-1.0
+*NetLoadModule		xstatsclass-1.1.5
+
+*NetLoadModule		xpopup-2.1
+*NetLoadModule		xtaskbar-2.3.2
+*NetLoadModule		xtray-2.2.2
+*NetLoadModule		xlabel-4.3
+*NetLoadModule		wazup-1.35
+*NetLoadModule		lslua-0.8.1 load lslua.dll
+*NetLoadModule		jdesk-0.75
+
+
+; -----------------
+;  [ Lua Scripts ]
+; -----------------
+
+*LuaFile	"$ThemeDir$theme.lua"
+
+
+; -------------
+;  [ Desktop ]
+; -------------
+
+jDeskWorkArea			"5,39,-5,-5"
+jDeskDesktopFolder		"$Desktop$"
+jDeskRecycleOnRezChange	true
+
+
+; -----------
+;  [ Popup ]
+; -----------
+
+xPopupLeftBorder				5
+xPopupRightBorder				5
+xPopupTopBorder					5
+xPopupBottomBorder				5
+
+xPopupMinWidth					111
+xPopupYSpacing					2
+xPopupOverlapX					3
+xPopupEntryHeight				17
+xPopupSeparatorHeight			4
+
+xPopupAlphaMap					true
+xPopupShowIcon					false
+xPopupShowCaption				".none"
+
+xPopupFont						"Semplice Regular"
+xPopupFontBorders				5 20 0 1
+xPopupFontHeight				13
+xPopupFontColor					$mnPopupColor$
+xPopupFontClearType				false
+
+xPopupPaintingMode				".image"
+xPopupImage						"popup.png"
+xPopupImageEdges				7 7 7 7
+
+xPopupEntryPaintingMode			".image"
+xPopupEntryImage				"popupEntry.png"
+xPopupEntryImageEdges			5 5 6 6
+
+xPopupActiveEntryPaintingMode	".image"
+xPopupActiveEntryImage			"popupEntryActive.png"
+xPopupActiveEntryImageEdges		9 9 0 0
+
+xPopupFolderPaintingMode		".image"
+xPopupFolderImage				"popupFolder.png"
+xPopupFolderImageEdges			5 8 0 0
+
+xPopupFolderPaintingMode		".image"
+xPopupActiveFolderImage			"popupFolderActive.png"
+xPopupActiveFolderImageEdges	9 9 0 0
+
+xPopupAlwaysOnTop				true
+
+
+; -------------
+;  [ Taskbar ]
+; -------------
+
+xTaskbarX							27
+xTaskbarY							5
+xTaskbarBorders						3 3 3 3
+
+xTaskbarAutoSize					1453 20 10
+
+xTaskbarAlphaMap					true
+xTaskbarShowIcon					false
+xTaskbarShowHoverState				true
+xTaskbarUseFlashingState			true
+
+xTaskbarFont						"Semplice Regular"
+xTaskbarFontBorders					8 8 0 1
+xTaskbarFontHeight					13
+xTaskbarFontAlign					".left"
+xTaskbarFontColor					$mnTaskbarColor$
+xTaskbarFontClearType				false
+xTaskbarFlashingFontColor			$mnTaskbarColorFlashing$
+
+xTaskbarPaintingMode				".image"
+xTaskbarImage						"taskbar.png"
+xTaskbarImageEdges					10 10 0 0
+
+xTaskbarButtonXSpacing				3
+xTaskbarButtonMaxWidth				200
+xTaskbarButtonMaxHeight				23
+
+xTaskbarButtonPaintingMode			".image"
+xTaskbarButtonImage					"taskbarButton.png"
+xTaskbarButtonImageEdges			4 4 0 0
+
+xTaskbarActiveButtonPaintingMode	".image"
+xTaskbarActiveButtonImage			"taskbarButtonActive.png"
+xTaskbarActiveButtonImageEdges		13 13 0 0
+
+xTaskbarHoverButtonPaintingMode		".image"
+xTaskbarHoverButtonImage			"taskbarButtonHover.png"
+xTaskbarHoverButtonImageEdges		13 13 0 0
+
+xTaskbarShowTooltip					false
+xTaskbarHideIfEmpty					true
+
+xTaskbarOnMiddleClickButton			".close"
+
+
+; --------------
+;  [ Sys Tray ]
+; --------------
+
+xTrayX								-120
+xTrayY								~34
+xTrayBorders						10 10 9 9
+
+xTrayAutoSize						20 10
+
+xTrayAlphaMap						true
+
+xTrayLayout							".horizontal"
+xTrayDirection						".left"
+xTrayXSpacing						2
+
+xTrayPaintingMode					".image"
+xTrayImage							"sysTray.png"
+xTrayImageEdges						7 7 0 0
+
+xTrayIconSize						11
+xTrayIconMode						".stretch_Lanczos8"
+xTrayIconSaturationIntensity		0
+
+xTrayHoverIconSaturationIntensity	100
+
+
+; -------------------
+;  [ Label Configs ]
+; -------------------
+
+;  [ Global ]
+; ------------
+GlobalFont			"Semplice Regular"
+GlobalFontHeight	13
+GlobalFontColor		$mnLabelColor$
+GlobalFontClearType	false
+
+GlobalTooltipLabel			mnTooltipDefault
+GlobalTooltipColor			000000
+GlobalTooltipFont			"Semplice Regular"
+GlobalTooltipFontHeight		13
+GlobalTooltipFontColor		$mnLabelColor$
+GlobalTooltipFontSmoothing	false
+GlobalTooltipFontClearType	false
+
+;  [ Weather ]
+; -------------
+mnWeatherGroupX					-81
+
+mnWeatherGroupWidth				81
+mnWeatherGroupHeight			47
+
+mnWeatherGroupAlphaMap			true
+
+mnWeatherGroupPaintingMode		".image"
+mnWeatherGroupImage				"weather.png"
+mnWeatherGroupImageEdges		53 0 0 0
+
+mnWeatherGroupTooltipLabel		mnTooltipWeather
+
+mnWeatherGroupOnLeftClick		!Execute ["$Browser$" http://weather.yahoo.com/country/state/city-$mnWeatherWOEID$/]
+
+;  [ Weather Icon ]
+; ------------------
+mnWeatherIconGroupPaintingMode	".image"
+mnWeatherIconGroupImage			"weather/3200.png"
+
+mnWeatherIconGroupOnLeftClick	!Execute ["$Browser$" http://weather.yahoo.com/country/state/city-$mnWeatherWOEID$/]
+
+;  [ Weather Day ]
+; -----------------
+mnWeatherDayGroupFontAlign		".center"
+mnWeatherDayGroupText			"<font color=#$mnBlue$>[[</font> ?? <font color=#$mnBlue$>]]</font>"
+
+mnWeatherDayGroupOnLeftClick	!Execute ["$Browser$" http://weather.yahoo.com/country/state/city-$mnWeatherWOEID$/]
+
+;  [ Weather Temp ]
+; ------------------
+mnWeatherTempGroupFontAlign		".center"
+mnWeatherTempGroupText			"??"
+
+mnWeatherTempGroupOnLeftClick	!Execute ["$Browser$" http://weather.yahoo.com/country/state/city-$mnWeatherWOEID$/]
+
+;  [ Tooltips ]
+; --------------
+
+mnTooltipGroupAutoWidthMode	".center"
+
+mnTooltipGroupAlphaMap		true
+
+mnTooltipGroupFontAlign		".center"
+
+mnTooltipGroupPaintingMode	".image"
+mnTooltipGroupImage			"tooltip.png"
+mnTooltipGroupImageEdges	7 7 6 6
+
+mnTooltipGroupAlwaysOnTop	true
+mnTooltipGroupStartHidden	true
+
+
+; ------------------
+;  [ Start Button ]
+; ------------------
+
+*Label								mnStartButton
+
+mnStartButtonX						0
+mnStartButtonY						5
+
+mnStartButtonWidth					22
+mnStartButtonHeight					29
+
+mnStartButtonAlphaMap				true
+
+mnStartButtonPaintingMode			".image"
+mnStartButtonImage					"startButton.png"
+
+mnStartButtonHoverPaintingMode		".image"
+mnStartButtonHoverImage				"startButtonHover.png"
+
+mnStartButtonOnLeftClick			!mnToggleStartMenu
+mnStartButtonOnRightClick			!xTaskbarMinimizeAll
+
+
+; ----------------
+;  [ Start Menu ]
+; ----------------
+
+;  [ My Computer ]
+; -----------------
+*Label							mnMyComputer
+
+mnMyComputerX					~102
+mnMyComputerY					39
+
+mnMyComputerWidth				102
+mnMyComputerHeight				29
+
+mnMyComputerAlphaMap			true
+
+mnMyComputerPaintingMode		".image"
+mnMyComputerImage				"startMenuMyComputer.png"
+
+mnMyComputerHoverPaintingMode	".image"
+mnMyComputerHoverImage			"startMenuMyComputerHover.png"
+
+mnMyComputerAlwaysOnTop			true
+
+mnMyComputerOnLeftClick			!Execute ["$FileManager$" "$Drives$"][!mnToggleStartMenu]
+
+;  [ Control Panel ]
+; -------------------
+*Label							mnControlPanel
+
+mnControlPanelX					~107
+mnControlPanelY					69
+
+mnControlPanelWidth				107
+mnControlPanelHeight			29
+
+mnControlPanelAlphaMap			true
+
+mnControlPanelPaintingMode		".image"
+mnControlPanelImage				"startMenuControlPanel.png"
+
+mnControlPanelHoverPaintingMode	".image"
+mnControlPanelHoverImage		"startMenuControlPanelHover.png"
+
+mnControlPanelAlwaysOnTop		true
+
+mnControlPanelOnLeftClick		!Execute ["$FileManager$" "$Controls$"][!mnToggleStartMenu]
+
+;  [ Volume ]
+; ------------
+*Label						mnVolume
+
+mnVolumeX					~76
+mnVolumeY					99
+
+mnVolumeWidth				76
+mnVolumeHeight				29
+
+mnVolumeAlphaMap			true
+
+mnVolumePaintingMode		".image"
+mnVolumeImage				"startMenuVolume.png"
+
+mnVolumeHoverPaintingMode	".image"
+mnVolumeHoverImage			"startMenuVolumeHover.png"
+
+mnVolumeAlwaysOnTop			true
+
+mnVolumeOnLeftClick			!Execute ["mmsys.cpl"][!mnToggleStartMenu]
+
+;  [ Trash ]
+; -----------
+*Label						mnTrash
+
+mnTrashX					~72
+mnTrashY					129
+
+mnTrashWidth				72
+mnTrashHeight				29
+
+mnTrashAlphaMap				true
+
+mnTrashPaintingMode			".image"
+mnTrashImage				"startMenuTrash.png"
+
+mnTrashHoverPaintingMode	".image"
+mnTrashHoverImage			"startMenuTrashHover.png"
+
+mnTrashAlwaysOnTop			true
+
+mnTrashOnLeftClick			!Execute ["$FileManager$" "$BitBucket$"][!mnToggleStartMenu]
+
+;  [ Shutdown ]
+; ------------
+*Label						mnShutdown
+
+mnShutdownX					~88
+mnShutdownY					159
+
+mnShutdownWidth				88
+mnShutdownHeight			29
+
+mnShutdownAlphaMap			true
+
+mnShutdownPaintingMode		".image"
+mnShutdownImage				"startMenuShutdown.png"
+
+mnShutdownHoverPaintingMode	".image"
+mnShutdownHoverImage		"startMenuShutdownHover.png"
+
+mnShutdownAlwaysOnTop		true
+
+mnShutdownOnLeftClick		!Execute [!Shutdown][!mnToggleStartMenu]
+
+
+; -----------
+;  [ Clock ]
+; -----------
+
+*Label					mnClock
+
+mnClockX				-115
+mnClockY				5
+
+mnClockWidth			115
+mnClockHeight			29
+
+mnClockAlphaMap			true
+
+mnClockFontBorders		8 0 0 1
+mnClockFontAlign		".center"
+
+mnClockPaintingMode		".image"
+mnClockImage			"clock.png"
+mnClockImageEdges		16 0 0 0
+mnClockText				"[time('h')]<font color=#$mnBlue$>:</font>[time('nn')] [time('AM/PM')] <font color=#$mnBlue$>[[</font> [upperCase(time('ddd'))]<font color=#$mnBlue$>,</font> [time('d')] [upperCase(time('mmm'))] <font color=#$mnBlue$>]]</font>"
+
+mnClockOnLeftClick		!mnToggleSysTray
+mnClockOnRightClick		!mnToggleWeather
+
+
+; -------------
+;  [ Weather ]
+; -------------
+
+;  [ Now ]
+; ---------
+*Label 						mnWeatherNow
+mnWeatherNowAddToGroup		"mnWeatherGroup"
+
+mnWeatherNowY				-148
+
+;  [ Now Icon ]
+; --------------
+*mnWeatherNowOverlayLabel	11 11 25 25 mnWeatherNowIcon #as
+mnWeatherNowIconAddToGroup	"mnWeatherIconGroup"
+
+;  [ Now Day ]
+; -------------
+*mnWeatherNowOverlayLabel	45 12 36 9 mnWeatherNowDay #s
+mnWeatherNowDayAddToGroup	"mnWeatherDayGroup"
+
+mnWeatherNowDayText			"<font color=#$mnBlue$>[[</font> NOW <font color=#$mnBlue$>]]</font>"
+
+;  [ Now Temp ]
+; --------------
+*mnWeatherNowOverlayLabel	45 24 36 9 mnWeatherNowTemp #s
+mnWeatherNowTempAddToGroup	"mnWeatherTempGroup"
+
+
+;  [ Today ]
+; -----------
+*Label						mnWeatherToday
+mnWeatherTodayAddToGroup	"mnWeatherGroup"
+
+mnWeatherTodayY				-100
+
+;  [ Today Icon ]
+; ----------------
+*mnWeatherTodayOverlayLabel		11 11 25 25 mnWeatherTodayIcon #as
+mnWeatherTodayIconAddToGroup	"mnWeatherIconGroup"
+
+;  [ Today Day ]
+; ---------------
+*mnWeatherTodayOverlayLabel	45 12 36 9 mnWeatherTodayDay #s
+mnWeatherTodayDayAddToGroup	"mnWeatherDayGroup"
+
+;  [ Today Temp ]
+; ----------------
+*mnWeatherTodayOverlayLabel		45 24 36 9 mnWeatherTodayTemp #s
+mnWeatherTodayTempAddToGroup	"mnWeatherTempGroup"
+
+
+;  [ Tomorrow ]
+; --------------
+*Label							mnWeatherTomorrow
+mnWeatherTomorrowAddToGroup		"mnWeatherGroup"
+
+mnWeatherTomorrowY				-52
+
+;  [ Tomorrow Icon ]
+; -------------------
+*mnWeatherTomorrowOverlayLabel	11 11 25 25 mnWeatherTomorrowIcon #as
+mnWeatherTomorrowIconAddToGroup	"mnWeatherIconGroup"
+
+;  [ Tomorrow Day ]
+; ------------------
+*mnWeatherTomorrowOverlayLabel	45 12 36 9 mnWeatherTomorrowDay #s
+mnWeatherTomorrowDayAddToGroup	"mnWeatherDayGroup"
+
+;  [ Tomorrow Temp ]
+; -------------------
+*mnWeatherTomorrowOverlayLabel	45 24 36 9 mnWeatherTomorrowTemp #s
+mnWeatherTomorrowTempAddToGroup	"mnWeatherTempGroup"
+
+
+; --------------
+;  [ Tooltips ]
+; --------------
+
+;  [ Default ]
+; -------------
+
+*Label							mnTooltipDefault
+mnTooltipDefaultAddToGroup		"mnTooltipGroup"
+
+mnTooltipDefaultAutoHeightMode	".top"
+
+mnTooltipDefaultFontBorders		4 2 0 2
+
+;  [ Weather ]
+; -------------
+
+*Label						mnTooltipWeather
+mnTooltipWeatherAddToGroup	"mnTooltipGroup"
+
+mnTooltipWeatherHeight		15
+
+mnTooltipWeatherFontBorders	1 0 0 2
+
+
+; ------------------
+;  [ Wazup Config ]
+; ------------------
+*Wazup						mnWeatherRSS
+
+mnWeatherRSSURL				$mnWeatherURL$
+
+mnWeatherRSSEnabled			true
+mnWeatherRSSSilent			true
+mnWeatherRSSUpdateInterval	7200
+
+mnWeatherRSSInputString		"<yweather:condition{*}code={%quote}{%}{%quote}{*}temp={%quote}{%}{%quote}{*}<yweather:forecast{*}day={%quote}{%}{%quote}{*}low={%quote}{%}{%quote}{*}high={%quote}{%}{%quote}{*}code={%quote}{%}{%quote}{*}<yweather:forecast{*}day={%quote}{%}{%quote}{*}low={%quote}{%}{%quote}{*}high={%quote}{%}{%quote}{*}code={%quote}{%}{%quote}"
+
+mnWeatherRSSOnChecked		!WazupParseCommand mnWeatherRSS !mnUpdateWeather {%2} {%1} {%3} {%4} {%5} {%6} {%7} {%8} {%9} {%10}

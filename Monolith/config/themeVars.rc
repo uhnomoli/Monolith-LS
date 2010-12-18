@@ -1,0 +1,54 @@
+; ------------------------------------------------------
+;
+;  [ Theme   ] : Monolith
+;  [ Author  ] : Andrew Fricke (Anomareh)
+;  [ Website ] : http://www.mirroredwhite.com/
+;  [ Source  ] : http://github.com/Anomareh/Monolith-LS
+;
+; ------------------------------------------------------
+
+; ------------
+;  [ Colors ]
+; ------------
+
+mnBlue					00BDFF
+mnLightBlue				9BCEE0
+
+
+; -------------
+;  [ Taskbar ]
+; -------------
+
+mnTaskbarColor			$mnLightBlue$
+mnTaskbarColorFlashing	DDF3FB
+
+
+; -----------
+;  [ Popup ]
+; -----------
+
+mnPopupColor			$mnLightBlue$
+
+
+; ------------
+;  [ Labels ]
+; ------------
+
+mnLabelColor			$mnLightBlue$
+
+
+; -------------
+;  [ Weather ]
+; -------------
+
+; NOTE: To find your WOEID, visit: http://weather.yahoo.com/
+;
+;       Enter your city or zip code.
+;
+;       You should be taken to a link like such:
+;       http://weather.yahoo.com/<country>/<state>/<city>-<woeid>/
+;
+;       Simply grab the WOEID and enter it below.
+
+mnWeatherWOEID			<FIND YOUR WOEID AS DESCRIBED ABOVE AND ENTER IT HERE>
+mnWeatherURL			http://weather.yahooapis.com/forecastrss?w=$mnWeatherWOEID$
