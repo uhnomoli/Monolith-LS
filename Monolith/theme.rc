@@ -419,7 +419,7 @@ mnClockFontAlign		".center"
 mnClockPaintingMode		".image"
 mnClockImage			"clock.png"
 mnClockImageEdges		16 0 0 0
-mnClockText				"[time('h')]<font color=#$mnBlue$>:</font>[time('nn')] [time('AM/PM')] <font color=#$mnBlue$>[[</font> [upperCase(time('ddd'))]<font color=#$mnBlue$>,</font> [time('d')] [upperCase(time('mmm'))] <font color=#$mnBlue$>]]</font>"
+mnClockText				$mnClockFormat$
 
 mnClockOnLeftClick		!mnToggleSysTray
 mnClockOnRightClick		!mnToggleWeather

@@ -15,19 +15,19 @@ mnBlue					00BDFF
 mnLightBlue				9BCEE0
 
 
+; -----------
+;  [ Popup ]
+; -----------
+
+mnPopupColor			$mnLightBlue$
+
+
 ; -------------
 ;  [ Taskbar ]
 ; -------------
 
 mnTaskbarColor			$mnLightBlue$
 mnTaskbarColorFlashing	DDF3FB
-
-
-; -----------
-;  [ Popup ]
-; -----------
-
-mnPopupColor			$mnLightBlue$
 
 
 ; ------------
@@ -37,9 +37,22 @@ mnPopupColor			$mnLightBlue$
 mnLabelColor			$mnLightBlue$
 
 
+; -----------
+;  [ Clock ]
+; -----------
+
+mnClock24		"[time('i')]<font color=#$mnBlue$>:</font>[time('nn')] [time('AM/PM')] <font color=#$mnBlue$>[[</font> [upperCase(time('ddd'))]<font color=#$mnBlue$>,</font> [time('d')] [upperCase(time('mmm'))] <font color=#$mnBlue$>]]</font>"
+mnClock12		"[time('h')]<font color=#$mnBlue$>:</font>[time('nn')] [time('AM/PM')] <font color=#$mnBlue$>[[</font> [upperCase(time('ddd'))]<font color=#$mnBlue$>,</font> [time('d')] [upperCase(time('mmm'))] <font color=#$mnBlue$>]]</font>"
+
+mnClockFormat	$mnClock12$
+
+
 ; -------------
 ;  [ Weather ]
 ; -------------
+
+mnWeatherC	http://weather.yahooapis.com/forecastrss?w=$mnWeatherWOEID$&u=c
+mnWeatherF	http://weather.yahooapis.com/forecastrss?w=$mnWeatherWOEID$
 
 ; NOTE: To find your WOEID, visit: http://weather.yahoo.com/
 ;
@@ -50,5 +63,5 @@ mnLabelColor			$mnLightBlue$
 ;
 ;       Simply grab the WOEID and enter it below.
 
-mnWeatherWOEID			<FIND YOUR WOEID AS DESCRIBED ABOVE AND ENTER IT HERE>
-mnWeatherURL			http://weather.yahooapis.com/forecastrss?w=$mnWeatherWOEID$
+mnWeatherWOEID	12759100
+mnWeatherURL	$mnWeatherF$
