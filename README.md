@@ -63,6 +63,7 @@ To configure the weather widget you need to find your [WOEID][9]. To do this got
 [9]: http://developer.yahoo.com/geo/geoplanet/guide/concepts.html
 [10]: http://weather.yahoo.com/
 [11]: http://merlinthered.deviantart.com/art/plain-weather-icons-157162192
-[12]: http://github.com/Anomareh/Monolith-LS/raw/master/Extras/Screens/full.jpg
+[12]: http://github.com/uhnomoli/Monolith-LS/raw/master/Extras/Screens/full.jpg
 
-[100]: https://github.com/Anomareh/Monolith-LS/raw/master/Extras/Screens/thumb.jpg
+[100]: https://github.com/uhnomoli/Monolith-LS/raw/master/Extras/Screens/thumb.jpg
+
